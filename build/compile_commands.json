@@ -1,0 +1,20 @@
+[
+{
+  "directory": "C:/Users/ASUS/Desktop/Minden/Prog2/Szorgalmi/genetika2/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -DMEMTRACE -o CMakeFiles\\genetika.dir\\genetika_teszt.cpp.obj -c C:\\Users\\ASUS\\Desktop\\Minden\\Prog2\\Szorgalmi\\genetika2\\genetika_teszt.cpp",
+  "file": "C:/Users/ASUS/Desktop/Minden/Prog2/Szorgalmi/genetika2/genetika_teszt.cpp",
+  "output": "CMakeFiles/genetika.dir/genetika_teszt.cpp.obj"
+},
+{
+  "directory": "C:/Users/ASUS/Desktop/Minden/Prog2/Szorgalmi/genetika2/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -DMEMTRACE -o CMakeFiles\\genetika.dir\\allapotgep.cpp.obj -c C:\\Users\\ASUS\\Desktop\\Minden\\Prog2\\Szorgalmi\\genetika2\\allapotgep.cpp",
+  "file": "C:/Users/ASUS/Desktop/Minden/Prog2/Szorgalmi/genetika2/allapotgep.cpp",
+  "output": "CMakeFiles/genetika.dir/allapotgep.cpp.obj"
+},
+{
+  "directory": "C:/Users/ASUS/Desktop/Minden/Prog2/Szorgalmi/genetika2/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -DMEMTRACE -o CMakeFiles\\genetika.dir\\memtrace.cpp.obj -c C:\\Users\\ASUS\\Desktop\\Minden\\Prog2\\Szorgalmi\\genetika2\\memtrace.cpp",
+  "file": "C:/Users/ASUS/Desktop/Minden/Prog2/Szorgalmi/genetika2/memtrace.cpp",
+  "output": "CMakeFiles/genetika.dir/memtrace.cpp.obj"
+}
+]

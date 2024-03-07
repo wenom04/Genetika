@@ -1,0 +1,3 @@
+C:/Users/ASUS/Desktop/Minden/Prog2/Szorgalmi/genetika2/build/CMakeFiles/genetika.dir
+C:/Users/ASUS/Desktop/Minden/Prog2/Szorgalmi/genetika2/build/CMakeFiles/edit_cache.dir
+C:/Users/ASUS/Desktop/Minden/Prog2/Szorgalmi/genetika2/build/CMakeFiles/rebuild_cache.dir

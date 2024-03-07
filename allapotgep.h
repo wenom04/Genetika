@@ -38,9 +38,13 @@ struct String {
     char str[5];
 
     char& operator[] (size_t idx){
-        if (idx < 0 || idx > strlen(str))
-            throw "Túlindexelés!";
+        //if (idx < 0 || idx > strlen(str))
+            //throw "Túlindexelés!";
         return str[idx];
+    }
+
+    size_t size() const {
+        return strlen(str);
     }
 };
 
@@ -52,7 +56,7 @@ struct Allapot {
 class Allapotgep {
     int allapotok_szama;
     Allapot* allapotok;
-    int aktualis_allapot;
+    int aktualis_allapot = 0;
     String** matrix = nullptr;
 public:
     /**
