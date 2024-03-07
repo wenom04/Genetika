@@ -83,12 +83,17 @@ bool Allapotgep::elfogad(){
 
 
 void Allapotgep::atmenet(Bazis b){
-    for (int i = 0; i < allapotok_szama; i++){
-        for (int j = 0; matrix[aktualis_allapot][i][j] != '\0'; j++){
+    bool megtalalt = false;
+    for (size_t i = 0; i < allapotok_szama; i++){
+        for (size_t j = 0; matrix[aktualis_allapot][i].size(); j++){
             if (matrix[aktualis_allapot][i][j] == cast(b)){
                 aktualis_allapot = i;
+                megtalalt = true;
                 break;
             }
+        }
+        if (megtalalt){
+            break;
         }
     }
 }
