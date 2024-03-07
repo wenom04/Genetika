@@ -25,7 +25,7 @@
 void Allapotgep::konfigural(const char* fajlnev){
     if(matrix != nullptr){
         delete[] allapotok;
-        for (int i = 0; i < allapotok_szama; i++) {
+        for (size_t i = 0; i < allapotok_szama; i++) {
             delete[] matrix[i];
         }
         delete[] matrix;
@@ -39,7 +39,7 @@ void Allapotgep::konfigural(const char* fajlnev){
     char c;
     char nev[21];
     allapotok = new Allapot[allapotok_szama];
-    for (int i = 0; i < allapotok_szama; i++) {
+    for (size_t i = 0; i < allapotok_szama; i++) {
         f >> c >> nev;
         if (c == 'I') {
             allapotok[i].elfogado = true;
@@ -50,12 +50,12 @@ void Allapotgep::konfigural(const char* fajlnev){
         strcpy(allapotok[i].allapot_neve, nev);
     }
     matrix = new String* [allapotok_szama];
-    for (int i = 0; i < allapotok_szama; i++) {
+    for (size_t i = 0; i < allapotok_szama; i++) {
         matrix[i] = new String [allapotok_szama];
     }
 
-    for (int i = 0; i < allapotok_szama; i++) {
-        for (int j = 0; j < allapotok_szama; j++) {
+    for (size_t i = 0; i < allapotok_szama; i++) {
+        for (size_t j = 0; j < allapotok_szama; j++) {
             f >> matrix[i][j];
         }
     }
@@ -85,7 +85,7 @@ bool Allapotgep::elfogad(){
 void Allapotgep::atmenet(Bazis b){
     bool megtalalt = false;
     for (size_t i = 0; i < allapotok_szama; i++){
-        for (size_t j = 0; matrix[aktualis_allapot][i].size(); j++){
+        for (size_t j = 0; matrix[aktualis_allapot][i][j] != '\0'; j++){
             if (matrix[aktualis_allapot][i][j] == cast(b)){
                 aktualis_allapot = i;
                 megtalalt = true;
@@ -124,7 +124,7 @@ Allapotgep::~Allapotgep(){
     if(matrix != nullptr){
     delete[] allapotok;
     
-    for (int i = 0; i < allapotok_szama; i++) {
+    for (size_t i = 0; i < allapotok_szama; i++) {
         delete[] matrix[i];
     }
     delete[] matrix;
