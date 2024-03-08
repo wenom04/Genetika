@@ -42,10 +42,6 @@ struct String {
             throw "Túlindexelés!";
         return str[idx];
     }
-
-    size_t size() const {
-        return strlen(str);
-    }
 };
 
 struct Allapot {
